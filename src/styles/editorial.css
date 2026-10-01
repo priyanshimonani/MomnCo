@@ -1,0 +1,2703 @@
+.topbar,
+.icon-button,
+.menu-popover,
+.sheet,
+.palette,
+.egg-dialog {
+  border-color: var(--rule);
+  background: var(--surface);
+}
+
+.topbar__brand {
+  color: var(--ink);
+}
+
+.topbar__monogram {
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--card-pink);
+  color: var(--treasury);
+}
+
+.screen-heading h1,
+.gateway h1,
+.dividend-document h1,
+.dividend-document h2,
+.thank-you-page__line,
+.statement-panel__heading h2,
+.ledger-column h3,
+.bar-rows__group h3,
+.gateway__loading-copy,
+.not-found h1,
+.delete-account-dialog__copy {
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+}
+
+.screen-heading .eyebrow {
+  color: var(--treasury);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.button--primary {
+  border-color: var(--treasury);
+  border-radius: 9999px;
+  background: var(--treasury);
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.button--primary:hover:not(:disabled) {
+  box-shadow: 0 6px 18px rgb(29 122 117 / 14%);
+  transform: translateY(-1px);
+}
+
+.button--secondary {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--treasury);
+}
+
+.button--secondary:hover {
+  background: var(--card-sky);
+}
+
+.status-pill {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 24px;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--rule);
+  border-radius: 9999px;
+  padding: 4px 11px;
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.status-pill--blue { background: var(--card-sky); }
+.status-pill--yellow { background: var(--card-butter); }
+.status-pill--mint { background: var(--card-mint); }
+.status-pill--pink { background: var(--card-pink); }
+
+.gateway__cover,
+.gateway__loader,
+.statement-panel,
+.dividend-document,
+.thank-you-page__message,
+.metrics-grid--visual .metric {
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+}
+
+.gateway__cover {
+  display: flex;
+  width: min(100%, 820px);
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  padding: clamp(32px, 5vh, 52px) clamp(28px, 5vw, 60px);
+}
+
+.gateway__edition.status-pill {
+  margin-bottom: 14px;
+  background: var(--card-butter);
+}
+
+.gateway h1 {
+  margin-bottom: 4px;
+  color: var(--treasury);
+  font-size: clamp(48px, 6vw, 64px);
+}
+
+.gateway__period {
+  margin: 0;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+}
+
+.gateway__preview {
+  display: flex;
+  width: min(100%, 560px);
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 18px;
+  background: #f9f8f3;
+}
+
+.gateway__preview-title {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.gateway__preview-note {
+  margin: 2px 0 0;
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+}
+
+.gateway__letter-seal {
+  position: relative;
+  inset: auto;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--card-sky);
+  box-shadow: none;
+  color: var(--treasury);
+}
+
+.gateway__calculator-smile {
+  bottom: 7px;
+}
+
+.gateway__actions {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.gateway__enter {
+  min-width: 150px;
+}
+
+.gateway__loader {
+  border-color: var(--rule);
+  background: var(--surface);
+}
+
+.gateway__verification {
+  color: var(--treasury);
+}
+
+.metrics-grid--visual .metric {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  padding-top: 22px;
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.metrics-grid--visual .metric::before {
+  position: absolute;
+  inset: 0 0 auto;
+  display: block;
+  height: 2px;
+  background: var(--metric-accent);
+  content: "";
+}
+
+.metric--saffron,
+.metric--indigo,
+.metric--coral,
+.metric--plum {
+  --metric-bg: var(--surface);
+  --metric-border: var(--rule);
+  --metric-shadow: transparent;
+  --metric-tone: var(--treasury);
+}
+
+.metric--saffron { --metric-accent: var(--card-butter); }
+.metric--indigo { --metric-accent: var(--card-mint); }
+.metric--coral { --metric-accent: var(--card-sky); }
+.metric--plum { --metric-accent: var(--card-pink); }
+
+.metric__icon {
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--metric-accent);
+  color: var(--treasury);
+}
+
+.metric__value {
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-weight: 700;
+}
+
+.metric__sparkline-track {
+  stroke: rgb(29 122 117 / 18%);
+  stroke-width: 1;
+}
+
+.metric__sparkline-line {
+  stroke: #1d7a75;
+  stroke-width: 1.5;
+}
+
+.metric--plum .gauge__track {
+  background: var(--rule);
+}
+
+.metric--plum .gauge__track span {
+  background: var(--treasury);
+}
+
+.sleep-row {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--card-pink);
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+  color: var(--treasury);
+  padding-left: 14px;
+}
+
+.sleep-moon-sticker {
+  border: 1px solid var(--rule);
+  background: var(--card-pink);
+  color: var(--treasury);
+}
+
+.sleep-row .eyebrow,
+.sleep-row__change {
+  color: var(--treasury);
+}
+
+.statements-page .statement-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 0;
+}
+
+.statements-page .statement-tabs {
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.statements-page .statement-tabs button,
+.statements-page .statement-tabs button:nth-child(1),
+.statements-page .statement-tabs button:nth-child(2),
+.statements-page .statement-tabs button:nth-child(3) {
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink-muted);
+}
+
+.statements-page .statement-tabs button[aria-selected="true"] {
+  border-color: var(--treasury);
+  background: var(--treasury);
+  color: #ffffff;
+}
+
+.statements-page .statement-tabs button[aria-selected="true"]::after {
+  display: none;
+}
+
+.statements-page .unit-toggle {
+  margin-left: auto;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--treasury);
+}
+
+.statement-panel {
+  padding: 16px 20px;
+}
+
+.statement-panel__heading .eyebrow {
+  color: var(--treasury);
+}
+
+.balance-sheet .ledger-column h3 {
+  border-bottom-color: var(--rule);
+}
+
+.balance-sheet .ledger-row {
+  border-bottom: 1px solid #f0ece1;
+}
+
+.balance-sheet .ledger-row__code {
+  color: var(--ink-muted);
+  opacity: 0.72;
+}
+
+.balance-sheet .ledger-row summary > .mono:last-child,
+.balance-sheet .ledger-total .mono {
+  justify-self: end;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.balance-sheet .net-worth {
+  border: 1px dashed color-mix(in srgb, var(--card-butter) 75%, var(--rule));
+  background: rgb(253 227 129 / 30%);
+  color: var(--treasury);
+}
+
+.balance-sheet .net-worth .eyebrow,
+.balance-sheet .net-worth strong {
+  color: var(--treasury);
+}
+
+.pnl-panel .bar-rows {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.pnl-panel .bar-rows__group h3 {
+  min-height: 42px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.pnl-panel .bar-row {
+  grid-template-columns: minmax(0, 1.25fr) minmax(42px, 0.7fr) auto;
+  min-height: 28px;
+  gap: 8px;
+  margin-block: 8px;
+}
+
+.pnl-panel .bar-row__label {
+  color: var(--ink);
+  font-size: 0.75rem;
+}
+
+.pnl-panel .bar-row__track {
+  height: 5px;
+  border-radius: 9999px;
+  background: var(--rule);
+}
+
+.pnl-panel .bar-row__fill {
+  border-radius: 9999px;
+  background: var(--treasury);
+}
+
+.pnl-panel .bar-row__fill--expense {
+  background: var(--card-pink);
+  opacity: 1;
+}
+
+.pnl-panel .bar-row__amount {
+  color: var(--ink);
+  font-size: 0.6875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pnl-panel .bar-rows__total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0 0;
+  border-top: 1px solid var(--rule);
+  padding-top: 11px;
+  color: var(--treasury);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pnl-panel .bar-rows__total .mono {
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.pnl-panel .bar-rows__net-profit {
+  grid-column: 1 / -1;
+  border: 1px solid color-mix(in srgb, var(--card-butter) 60%, var(--rule));
+  border-radius: 14px;
+  padding: 13px 16px;
+  background: rgb(253 227 129 / 25%);
+  color: var(--treasury);
+}
+
+.pnl-panel .bar-rows__net-profit > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.pnl-panel .bar-rows__net-profit > div > strong:first-child {
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+}
+
+.pnl-panel .bar-rows__net-profit > div > strong:last-child {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pnl-panel .bar-rows__net-profit p {
+  margin: 5px 0 0;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.audit-control,
+.audit-control--pass,
+.audit-control--fail {
+  border: 1px solid var(--rule);
+  border-left-width: 1px;
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.audit-control--pass {
+  border-color: color-mix(in srgb, var(--card-mint) 75%, var(--rule));
+  background: color-mix(in srgb, var(--card-mint) 35%, var(--surface));
+}
+
+.audit-control--fail {
+  border-color: color-mix(in srgb, var(--card-pink) 75%, var(--rule));
+  background: color-mix(in srgb, var(--card-pink) 35%, var(--surface));
+}
+
+.audit-control__status,
+.audit-control--pass .audit-control__status,
+.audit-control--fail .audit-control__status {
+  color: var(--treasury);
+}
+
+.audit-stamp__button {
+  border: 1px solid var(--rule);
+  border-radius: 9999px;
+  background: var(--card-mint);
+  box-shadow: none;
+  color: var(--treasury);
+}
+
+.dividend-document__ticket-label svg {
+  color: var(--treasury);
+}
+
+.resolution-seal {
+  border: 1px solid var(--rule);
+  background: var(--card-butter);
+  box-shadow: none;
+  color: var(--treasury);
+}
+
+.resolution-seal--signed {
+  border-color: var(--rule);
+  background: var(--card-mint);
+  color: var(--treasury);
+}
+
+.resolution-signing {
+  border-top: 1px solid var(--rule);
+}
+
+.resolution-signing .pin-field input {
+  border: 1px solid var(--rule);
+}
+
+.thank-you-hearts {
+  color: var(--treasury);
+}
+
+.thank-you-hearts::before,
+.thank-you-hearts::after {
+  color: var(--card-butter);
+}
+
+.replay-link {
+  background: var(--card-butter);
+  color: var(--treasury);
+  text-decoration: none;
+}
+
+.egg-toast {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+  color: var(--ink);
+}
+
+@media (hover: hover) {
+  .metrics-grid--visual .metric:hover {
+    box-shadow: var(--soft-shadow);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 640px) {
+  .gateway__cover {
+    padding: 28px 22px;
+  }
+
+  .gateway__preview {
+    margin-top: 22px;
+  }
+
+  .statements-page .statement-toolbar {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .statements-page .unit-toggle {
+    margin-left: auto;
+  }
+
+  .pnl-panel .bar-rows {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .pnl-panel .bar-rows__net-profit {
+    grid-column: 1;
+  }
+
+  .pnl-panel .bar-row {
+    grid-template-columns: minmax(0, 1fr) minmax(42px, 0.5fr) auto;
+  }
+}
+
+[data-theme="dark"] .gateway__preview {
+  background: var(--paper);
+}
+
+[data-theme="dark"] .balance-sheet .net-worth {
+  background: color-mix(in srgb, var(--card-butter) 22%, var(--surface));
+}
+
+[data-theme="dark"] .pnl-panel .bar-rows__net-profit {
+  background: color-mix(in srgb, var(--card-butter) 18%, var(--surface));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metrics-grid--visual .metric,
+  .metrics-grid--visual .metric:hover {
+    transform: none;
+  }
+}
+
+.audit-screen .audit-controls {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+}
+
+.audit-screen .audit-control,
+.audit-screen .audit-control--pass,
+.audit-screen .audit-control--fail {
+  min-height: 54px;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  padding: 8px 2px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.audit-screen .audit-control:last-child {
+  border-bottom: 0;
+}
+
+.audit-screen .audit-control--fail {
+  border-radius: 10px;
+  padding-inline: 10px;
+  background: rgb(251 192 199 / 25%);
+}
+
+.audit-screen .audit-control__label {
+  color: var(--ink);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.audit-screen .audit-control__status {
+  min-width: 0;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  padding: 5px 10px;
+  background: transparent;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.07em;
+}
+
+.audit-screen .audit-control--pass .audit-control__status {
+  border-color: color-mix(in srgb, var(--card-mint) 70%, var(--rule));
+  background: #ebf7f1;
+  color: var(--treasury);
+}
+
+.audit-screen .audit-control--fail .audit-control__status {
+  border-color: color-mix(in srgb, var(--card-pink) 65%, var(--rule));
+  background: var(--card-pink);
+  color: var(--treasury);
+}
+
+.audit-screen .audit-rest-note {
+  color: var(--treasury);
+}
+
+.audit-screen .audit-stamp {
+  justify-content: center;
+  gap: 18px;
+}
+
+.audit-screen .audit-stamp__button {
+  min-height: 56px;
+  border: 2px solid var(--treasury);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: none;
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.audit-screen .audit-stamp__button--pressing {
+  box-shadow: none;
+}
+
+.audit-screen .audit-stamp__asterisk {
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.dividend-document {
+  border: 3px double var(--rule);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+}
+
+.dividend-document__ticket-label.status-pill {
+  border-color: color-mix(in srgb, var(--card-butter) 65%, var(--rule));
+  background: var(--card-butter);
+}
+
+.dividend-document .resolution-seal {
+  border: 1px solid color-mix(in srgb, var(--card-butter) 60%, var(--rule));
+  background: rgb(253 227 129 / 40%);
+  box-shadow: none;
+  color: var(--treasury);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.08em;
+}
+
+.dividend-document .resolution-seal--signed {
+  background: rgb(188 234 213 / 45%);
+}
+
+.dividend-document .resolution-signing .dsc-token {
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 12px;
+  background: #f9f8f3;
+}
+
+.dividend-document .dsc-token .eyebrow {
+  color: var(--treasury);
+}
+
+.dividend-document .dsc-token p {
+  color: var(--ink-muted);
+}
+
+.dividend-document .resolution-signing .pin-field input {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.dividend-document .resolution-signing .pin-field input:focus {
+  border-color: var(--treasury);
+  outline: 2px solid rgb(29 122 117 / 14%);
+  outline-offset: 1px;
+}
+
+.dividend-document .hold-to-sign {
+  border-radius: 9999px;
+  background: var(--treasury);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.dividend-document .hold-to-sign:disabled {
+  background: var(--treasury);
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.thank-you-page__message {
+  border: 1px solid var(--rule);
+  border-radius: 24px;
+  padding: clamp(28px, 5vh, 48px);
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgb(29 122 117 / 8%);
+  text-align: center;
+}
+
+.thank-you-page__line,
+.thank-you-page__message > h1.thank-you-page__line {
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  line-height: 1.7;
+}
+
+.thank-you-page__message > h1.thank-you-page__line {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+}
+
+.thank-you-hearts {
+  color: var(--card-pink);
+}
+
+.thank-you-hearts svg {
+  fill: none;
+  stroke: var(--card-pink);
+  stroke-width: 1.5;
+}
+
+.thank-you-page__signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.thank-you-page__signature::before {
+  display: block;
+  width: 92px;
+  height: 10px;
+  margin-bottom: 4px;
+  border-top: 1px solid var(--card-pink);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(-2deg);
+}
+
+.thank-you-page__signature .signature figcaption {
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.replay-link {
+  border: 1px solid color-mix(in srgb, var(--card-butter) 65%, var(--rule));
+  border-radius: 9999px;
+  padding: 9px 18px;
+  background: var(--card-butter);
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  text-decoration: none;
+}
+
+[data-theme="dark"] .dividend-document .resolution-signing .dsc-token {
+  background: var(--paper);
+}
+
+[data-theme="dark"] .thank-you-page__message {
+  background: var(--surface);
+}
+
+@media (max-width: 640px) {
+  .audit-screen .audit-controls {
+    padding-inline: 12px;
+  }
+
+  .audit-screen .audit-stamp {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .thank-you-page__line {
+    line-height: 1.5;
+  }
+}
+
+.audit-screen .screen-heading .eyebrow {
+  letter-spacing: 0.08em;
+}
+
+.audit-screen .screen-heading h1 {
+  font-size: clamp(34px, 3.6vw, 44px);
+}
+
+.audit-screen .audit-controls {
+  padding: 14px 20px 8px;
+}
+
+.audit-screen .audit-controls__metadata {
+  margin: 0 0 12px;
+  color: var(--ink-muted);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+.audit-screen .audit-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.audit-screen .audit-table thead {
+  border-bottom: 1px solid var(--rule);
+}
+
+.audit-screen .audit-table th {
+  padding: 10px 8px;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.audit-screen .audit-table th:last-child {
+  width: 170px;
+  text-align: right;
+}
+
+.audit-screen .audit-table tbody .audit-control,
+.audit-screen .audit-table tbody .audit-control--pass,
+.audit-screen .audit-table tbody .audit-control--fail {
+  display: table-row;
+  height: 58px;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.audit-screen .audit-table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+.audit-screen .audit-table tbody .audit-control--fail {
+  border-radius: 10px;
+  background: rgb(251 192 199 / 25%);
+}
+
+.audit-screen .audit-control__label,
+.audit-screen .audit-control__status-cell {
+  display: table-cell;
+  min-width: 0;
+  vertical-align: middle;
+  border: 0;
+  padding: 8px;
+}
+
+.audit-screen .audit-control__label {
+  color: var(--ink);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.audit-screen .audit-control__clause {
+  display: inline-block;
+  width: 94px;
+  color: var(--ink-muted);
+  font-size: 0.625rem;
+  letter-spacing: 0.02em;
+}
+
+.audit-screen .audit-control__status-cell {
+  width: 170px;
+  text-align: right;
+}
+
+.audit-screen .audit-control__status,
+.audit-screen .audit-control__status--pass,
+.audit-screen .audit-control__status--fail,
+.audit-screen .audit-control__status--pending {
+  display: inline-flex;
+  min-width: 116px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  padding: 6px 10px;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.audit-screen .audit-control__status--pass {
+  border-color: color-mix(in srgb, var(--card-mint) 70%, var(--rule));
+  background: #ebf7f1;
+  color: var(--treasury);
+}
+
+.audit-screen .audit-control__status--fail {
+  border-color: color-mix(in srgb, var(--card-pink) 70%, var(--rule));
+  background: var(--card-pink);
+  color: var(--treasury);
+}
+
+.audit-screen .audit-rest-note {
+  margin-top: 12px;
+  border: 1px solid color-mix(in srgb, var(--card-pink) 70%, var(--rule));
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: rgb(251 192 199 / 25%);
+  color: var(--treasury);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.audit-screen .audit-stamp {
+  justify-content: center;
+  gap: 20px;
+}
+
+.audit-screen .audit-stamp__target {
+  position: relative;
+  display: flex;
+  width: 240px;
+  max-width: 100%;
+  height: 112px;
+  flex: 0 1 240px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px dashed color-mix(in srgb, var(--treasury) 48%, var(--rule));
+  border-radius: 14px;
+  padding: 0;
+  appearance: none;
+  background: color-mix(in srgb, var(--surface) 92%, var(--card-butter));
+  box-shadow: inset 0 1px 3px rgb(29 122 117 / 5%);
+  color: var(--treasury);
+  cursor: crosshair;
+  font: inherit;
+  text-align: center;
+  touch-action: manipulation;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.audit-screen .audit-stamp__target:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--treasury) 72%, var(--rule));
+  background: color-mix(in srgb, var(--surface) 86%, var(--card-butter));
+}
+
+.audit-screen .audit-stamp__target:focus-visible {
+  outline: 2px solid var(--treasury);
+  outline-offset: 3px;
+}
+
+.audit-screen .audit-stamp__target:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.audit-screen .audit-stamp__prompt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: color-mix(in srgb, var(--treasury) 82%, var(--ink));
+  transition: opacity 140ms ease;
+}
+
+.audit-screen .audit-stamp__target--previewing .audit-stamp__prompt {
+  opacity: 0.32;
+}
+
+.audit-screen .audit-stamp__prompt strong {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.audit-screen .audit-stamp__prompt > span {
+  color: var(--ink-muted);
+  font-size: 0.6875rem;
+}
+
+.audit-screen .audit-stamp__seal {
+  position: absolute;
+  display: flex;
+  width: 144px;
+  height: 78px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px double var(--treasury);
+  border-radius: 48% 52% 51% 49% / 44% 47% 53% 56%;
+  background: color-mix(in srgb, var(--surface) 88%, var(--card-mint));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--treasury) 12%, transparent);
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  line-height: 1.15;
+  pointer-events: none;
+}
+
+.audit-screen .audit-stamp__seal::after {
+  position: absolute;
+  inset: 4px;
+  border: 1px solid color-mix(in srgb, var(--treasury) 75%, transparent);
+  border-radius: inherit;
+  content: "";
+}
+
+.audit-screen .audit-stamp__seal--preview {
+  opacity: 0.56;
+}
+
+.audit-screen .audit-stamp__seal--placed {
+  opacity: 1;
+  animation: audit-stamp-impact 300ms cubic-bezier(0.2, 0.8, 0.35, 1) both;
+}
+
+@keyframes audit-stamp-impact {
+  0% { scale: 1.08; rotate: 0deg; }
+  42% { scale: 0.88; rotate: 1deg; }
+  72% { scale: 1.03; rotate: -0.5deg; }
+  100% { scale: 1; rotate: 0deg; }
+}
+
+.audit-screen .audit-stamp__seal-kicker {
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.audit-screen .audit-stamp__seal strong {
+  margin: 2px 0;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.audit-screen .audit-stamp__seal-name,
+.audit-screen .audit-stamp__seal-year {
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.audit-screen .audit-stamp__seal-year {
+  margin-top: 1px;
+}
+
+.audit-screen .audit-stamp__seal-name,
+.audit-screen .audit-stamp__seal-year {
+  white-space: nowrap;
+}
+
+.audit-screen .audit-stamp__seal-kicker {
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audit-screen .audit-stamp__target,
+  .audit-screen .audit-stamp__prompt {
+    transition: none;
+  }
+
+  .audit-screen .audit-stamp__seal--placed {
+    animation: none;
+  }
+}
+
+[data-theme="dark"] .audit-screen .audit-control__status--pass {
+  background: color-mix(in srgb, var(--card-mint) 32%, var(--surface));
+}
+
+[data-theme="dark"] .audit-screen .audit-control__status--fail,
+[data-theme="dark"] .audit-screen .audit-rest-note {
+  background: color-mix(in srgb, var(--card-pink) 28%, var(--surface));
+}
+
+@media (max-width: 640px) {
+  .audit-screen .screen-heading h1 {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+
+  .audit-screen .audit-controls {
+    padding: 12px 10px 6px;
+  }
+
+  .audit-screen .audit-controls__metadata {
+    font-size: 0.5625rem;
+  }
+
+  .audit-screen .audit-table th:last-child,
+  .audit-screen .audit-control__status-cell {
+    width: 112px;
+  }
+
+  .audit-screen .audit-table tbody .audit-control,
+  .audit-screen .audit-table tbody .audit-control--pass,
+  .audit-screen .audit-table tbody .audit-control--fail {
+    height: 64px;
+  }
+
+  .audit-screen .audit-control__label {
+    padding-inline: 4px;
+    font-size: 0.75rem;
+  }
+
+  .audit-screen .audit-control__clause {
+    display: block;
+    width: auto;
+    margin-bottom: 3px;
+  }
+
+  .audit-screen .audit-control__status-cell {
+    padding-inline: 2px;
+  }
+
+  .audit-screen .audit-control__status,
+  .audit-screen .audit-control__status--pass,
+  .audit-screen .audit-control__status--fail,
+  .audit-screen .audit-control__status--pending {
+    min-width: 0;
+    padding-inline: 7px;
+    font-size: 0.5625rem;
+  }
+
+  .audit-screen .audit-stamp {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .audit-screen .audit-stamp__asterisk {
+    text-align: center;
+  }
+}
+
+.dividend-page .screen-heading {
+  margin-bottom: 12px;
+}
+
+.dividend-page {
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.dividend-page .dividend-document {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.dividend-page .dividend-certificate {
+  position: relative;
+  overflow: hidden;
+  border: 3px double color-mix(in srgb, var(--treasury) 50%, var(--card-butter-border));
+  border-radius: 18px;
+  padding: clamp(13px, 2vh, 18px) clamp(20px, 5vw, 54px) 12px;
+  background: var(--surface);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--card-butter) 75%, var(--rule));
+  text-align: center;
+}
+
+.dividend-page .dividend-certificate::before {
+  position: absolute;
+  inset: 7px;
+  border: 1px solid color-mix(in srgb, var(--card-butter-border) 70%, transparent);
+  border-radius: 11px;
+  content: "";
+  pointer-events: none;
+}
+
+.dividend-page .dividend-certificate__header,
+.dividend-page .dividend-certificate__amount,
+.dividend-page .dividend-certificate__copy,
+.dividend-page .dividend-certificate__detail,
+.dividend-page .dividend-certificate__terms,
+.dividend-page .dividend-certificate__footer,
+.dividend-page .dividend-certificate__credited {
+  position: relative;
+  z-index: 1;
+}
+
+.dividend-page .dividend-certificate__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dividend-page .dividend-document--approved .dividend-certificate__header {
+  padding-top: 52px;
+}
+
+.dividend-page .dividend-certificate__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.dividend-page .dividend-certificate__seal {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--treasury) 55%, var(--card-butter-border));
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--card-butter) 45%, var(--surface));
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: 0.6875rem;
+  letter-spacing: -0.08em;
+}
+
+.dividend-page .dividend-document__ticket-label.status-pill {
+  min-height: 20px;
+  margin-bottom: 4px;
+  border-color: color-mix(in srgb, var(--card-butter-border) 70%, var(--rule));
+  padding: 3px 10px;
+  font-size: 0.5625rem;
+  letter-spacing: 0.11em;
+}
+
+.dividend-page .dividend-certificate__header h2 {
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(1.05rem, 2.3vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.dividend-page .dividend-certificate__lead,
+.dividend-page .dividend-certificate__entitlement {
+  margin: 0;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.dividend-page .dividend-certificate__recipient {
+  margin: 1px 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(1.4rem, 3.6vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.dividend-page .dividend-certificate__distribution {
+  margin: 2px 0 0;
+  color: var(--treasury);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.dividend-page .dividend-certificate__amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-width: 190px;
+  margin: 5px auto;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 2px 12px;
+  color: var(--treasury);
+}
+
+.dividend-page .dividend-certificate__amount-label {
+  align-self: flex-start;
+  padding-top: 6px;
+  color: var(--ink-muted);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.dividend-page .dividend-certificate__amount strong {
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.dividend-page .dividend-certificate__currency {
+  align-self: flex-end;
+  padding-bottom: 5px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.dividend-page .dividend-certificate__copy {
+  margin: 5px 0 2px;
+  color: var(--ink);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dividend-page .dividend-certificate__detail {
+  max-width: 610px;
+  margin: 0 auto;
+  color: var(--ink-muted);
+  font-size: 0.6875rem;
+  line-height: 1.45;
+}
+
+.dividend-page .dividend-certificate__terms {
+  display: flex;
+  justify-content: center;
+  gap: clamp(14px, 4vw, 38px);
+  margin: 7px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 4px 0;
+}
+
+.dividend-page .dividend-certificate__terms div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dividend-page .dividend-certificate__terms dt {
+  color: var(--ink-muted);
+  font-size: 0.5625rem;
+}
+
+.dividend-page .dividend-certificate__terms dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.6875rem;
+  font-weight: 600;
+}
+
+.dividend-page .dividend-certificate__footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.6875rem;
+  font-style: italic;
+}
+
+.dividend-page .dividend-certificate__footer p {
+  margin: 0;
+}
+
+.dividend-page .dividend-certificate__footer p:last-child {
+  text-align: right;
+}
+
+.dividend-page .dividend-certificate__footer strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.dividend-page .dividend-certificate__submitting {
+  position: relative;
+  z-index: 1;
+  margin: 6px 0 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.9375rem;
+  font-style: italic;
+}
+
+.dividend-page .dividend-approval-stamp {
+  position: absolute;
+  z-index: 2;
+  top: 28px;
+  right: 34px;
+  display: flex;
+  width: 132px;
+  min-height: 74px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px double var(--treasury);
+  border-radius: 47% 53% 50% 50% / 48% 46% 54% 52%;
+  background: color-mix(in srgb, var(--surface) 82%, var(--card-mint));
+  color: var(--treasury);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  line-height: 1.15;
+  opacity: 0.9;
+  transform: rotate(-8deg);
+  animation: dividend-stamp-press 420ms cubic-bezier(0.2, 0.8, 0.35, 1) both;
+}
+
+.dividend-page .dividend-approval-stamp::after {
+  position: absolute;
+  inset: 4px;
+  border: 1px solid color-mix(in srgb, var(--treasury) 72%, transparent);
+  border-radius: inherit;
+  content: "";
+  pointer-events: none;
+}
+
+.dividend-page .dividend-approval-stamp span {
+  font-size: 0.4375rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.dividend-page .dividend-approval-stamp strong {
+  margin: 2px 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+@keyframes dividend-stamp-press {
+  0% { opacity: 0.5; scale: 1.14; }
+  48% { opacity: 1; scale: 0.9; }
+  74% { scale: 1.03; }
+  100% { opacity: 0.9; scale: 1; }
+}
+
+.dividend-page .dividend-certificate__credited {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3px 10px;
+  margin-top: 8px;
+  color: var(--treasury);
+  font-size: 0.6875rem;
+}
+
+.dividend-page .dividend-certificate__credited strong {
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+}
+
+.dividend-page .dividend-certificate__credited b {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.dividend-page .dividend-signing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.85fr);
+  align-items: end;
+  gap: 12px 30px;
+  margin-top: 8px;
+  border-top: 1px solid var(--rule);
+  padding: 12px clamp(4px, 2vw, 20px) 0;
+}
+
+.dividend-page .dividend-signing__copy h2 {
+  margin: 0 0 2px;
+  color: var(--ink);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.dividend-page .dividend-signing__copy p {
+  max-width: 390px;
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.dividend-page .dividend-signature > p {
+  display: block;
+  margin: 0 0 3px;
+  color: var(--treasury);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.dividend-page .dividend-signature__paper {
+  position: relative;
+  height: 54px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--surface) 90%, var(--card-butter));
+}
+
+.dividend-page .dividend-signature__pad {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.dividend-page .dividend-signature__stroke {
+  fill: none;
+  stroke: var(--treasury);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3.3;
+  vector-effect: non-scaling-stroke;
+}
+
+.dividend-page .dividend-signature__hint {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: color-mix(in srgb, var(--ink-muted) 72%, transparent);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.dividend-page .dividend-signature__rule {
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+  left: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--treasury) 38%, var(--rule));
+  pointer-events: none;
+}
+
+.dividend-page .dividend-signature__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.dividend-page .dividend-signature__actions p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.5625rem;
+}
+
+.dividend-page .dividend-signature__actions button {
+  border: 0;
+  padding: 2px 4px;
+  background: transparent;
+  color: var(--treasury);
+  cursor: pointer;
+  font-size: 0.625rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.dividend-page .dividend-signature__actions button:disabled {
+  color: var(--ink-muted);
+  cursor: default;
+  opacity: 0.55;
+}
+
+@media (max-width: 640px) {
+  .dividend-page .dividend-certificate {
+    padding: 15px 16px 12px;
+  }
+
+  .dividend-page .dividend-certificate__footer {
+    font-size: 0.6875rem;
+  }
+
+  .dividend-page .dividend-signing {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+    padding-inline: 4px;
+  }
+
+  .dividend-page .dividend-signature__paper {
+    height: 62px;
+  }
+
+  .dividend-page .dividend-approval-stamp {
+    top: 16px;
+    right: 18px;
+    width: 106px;
+    min-height: 62px;
+  }
+
+  .dividend-page .dividend-document--approved .dividend-certificate__header {
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 380px) {
+  .dividend-page .dividend-certificate__terms {
+    gap: 10px;
+  }
+
+  .dividend-page .dividend-certificate__terms dt,
+  .dividend-page .dividend-certificate__terms dd {
+    font-size: 0.5625rem;
+  }
+
+  .dividend-page .dividend-approval-stamp {
+    top: 12px;
+    right: 12px;
+    width: 92px;
+    min-height: 55px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dividend-page .dividend-approval-stamp {
+    animation: none;
+  }
+}
+
+.thank-you-page {
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.thank-you-page .thank-you-page__message {
+  width: min(100%, 900px);
+  border: 1px solid var(--rule);
+  border-radius: 24px;
+  padding: clamp(20px, 4vh, 36px) clamp(20px, 5vw, 48px);
+  background: var(--surface);
+  box-shadow: 0 16px 40px rgb(29 122 117 / 8%);
+  text-align: center;
+}
+
+.thank-you-page .thank-you-page__eyebrow {
+  margin: 0 0 5px;
+  color: var(--treasury);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.thank-you-page .thank-you-page__message > h1.thank-you-page__line {
+  margin: 0 0 16px;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.thank-you-page .thank-you-page__valuation {
+  width: fit-content;
+  min-width: min(100%, 330px);
+  margin: 0 auto 16px;
+  border-top: 1px solid color-mix(in srgb, var(--card-butter-border) 75%, var(--rule));
+  border-bottom: 1px solid color-mix(in srgb, var(--card-butter-border) 75%, var(--rule));
+  padding: 9px 22px 10px;
+  animation: thank-you-valuation-reveal 700ms ease-out both;
+}
+
+.thank-you-page .thank-you-page__valuation > span {
+  display: block;
+  color: var(--ink-muted);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+.thank-you-page .thank-you-page__valuation > strong {
+  display: block;
+  margin: 1px 0 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(2.35rem, 5vw, 3.25rem);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  line-height: 1.05;
+}
+
+.thank-you-page .thank-you-page__valuation > p {
+  margin: 3px 0 0;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.thank-you-page .thank-you-page__reveal {
+  margin: 0 0 9px;
+  animation: thank-you-valuation-reveal 700ms ease-out 160ms both;
+}
+
+.thank-you-page .thank-you-page__reveal > p {
+  margin: 0 0 2px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.thank-you-page .thank-you-page__reveal > h2 {
+  margin: 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.thank-you-page .thank-you-page__heartfelt {
+  margin: 0 auto;
+  color: var(--ink);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.thank-you-page .thank-you-page__heartfelt p {
+  margin: 0;
+}
+
+.thank-you-page .thank-you-page__acknowledgement {
+  width: min(100%, 480px);
+  margin: 17px auto 0;
+  border-top: 1px solid var(--rule);
+  padding-top: 10px;
+  text-align: left;
+}
+
+.thank-you-page .thank-you-page__acknowledgement-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.thank-you-page .thank-you-page__acknowledgement-heading p {
+  margin: 0;
+  color: var(--treasury);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.thank-you-page .thank-you-page__acknowledgement-heading span,
+.thank-you-page .thank-you-page__acknowledgement-footer > span:not(.thank-you-page__recorded-status) {
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+.thank-you-page .thank-you-page__signature-pad {
+  position: relative;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--surface) 94%, var(--card-pink));
+}
+
+.thank-you-page .thank-you-page__signature-drawing {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.thank-you-page .thank-you-page__signature-drawing path {
+  fill: none;
+  stroke: var(--card-pink);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.thank-you-page .thank-you-page__acknowledgement--recorded .thank-you-page__signature-drawing path {
+  animation: thank-you-signature-settle 380ms ease-out both;
+  transform-origin: center;
+}
+
+.thank-you-page .thank-you-page__signature-hint {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  color: color-mix(in srgb, var(--ink-muted) 68%, transparent);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.thank-you-page .thank-you-page__signature-rule {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  left: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--card-pink) 75%, var(--rule));
+  pointer-events: none;
+}
+
+.thank-you-page .thank-you-page__acknowledgement-footer {
+  display: flex;
+  min-height: 26px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px 12px;
+  padding-top: 2px;
+}
+
+.thank-you-page .thank-you-page__signoff {
+  color: var(--treasury);
+  font-family: "Caveat", "Segoe Print", cursive;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.thank-you-page .thank-you-page__recorded-status {
+  color: var(--treasury);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.thank-you-page .thank-you-page__clear {
+  border: 0;
+  padding: 2px 4px;
+  background: transparent;
+  color: var(--ink-muted);
+  cursor: pointer;
+  font-size: 0.625rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.thank-you-page .thank-you-page__controls {
+  padding-top: 14px;
+}
+
+.thank-you-page .replay-link {
+  border: 1px solid color-mix(in srgb, var(--card-butter) 65%, var(--rule));
+  border-radius: 9999px;
+  padding: 7px 14px;
+  background: var(--card-butter);
+  color: var(--ink);
+  font-family: "Nunito", "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+@keyframes thank-you-valuation-reveal {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes thank-you-signature-settle {
+  from { opacity: 0.72; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 640px) {
+  .thank-you-page .thank-you-page__message {
+    padding: 22px 18px;
+  }
+
+  .thank-you-page .thank-you-page__acknowledgement-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thank-you-page .thank-you-page__valuation,
+  .thank-you-page .thank-you-page__reveal,
+  .thank-you-page .thank-you-page__acknowledgement--recorded .thank-you-page__signature-drawing path {
+    animation: none;
+  }
+}
+
+.thank-you-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  padding: 8px clamp(16px, 3vw, 32px) 6px;
+}
+
+.thank-you-page .thank-you-page__message {
+  width: min(100%, 900px);
+  max-height: 100%;
+  margin: auto;
+  padding: clamp(14px, 3vh, 30px) clamp(20px, 5vw, 48px);
+}
+
+.thank-you-page .thank-you-page__eyebrow {
+  margin: 0 0 4px;
+  color: var(--treasury);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.thank-you-page .thank-you-page__message > h1.thank-you-page__line {
+  margin: 0 0 10px;
+  animation: none;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+}
+
+.thank-you-page__reveal-item {
+  opacity: 0;
+  visibility: hidden;
+  animation: none;
+  filter: blur(2px);
+  transform: translateY(5px) scale(0.99);
+  transition:
+    opacity 850ms ease,
+    transform 850ms ease,
+    filter 850ms ease,
+    visibility 0s linear 850ms;
+}
+
+.thank-you-page__reveal-item.is-visible {
+  opacity: 1;
+  visibility: visible;
+  filter: blur(0);
+  transform: translateY(0) scale(1);
+  transition-delay: 0s;
+}
+
+.thank-you-page .thank-you-page__valuation {
+  min-width: min(100%, 330px);
+  margin: 0 auto 8px;
+  border-top: 1px solid color-mix(in srgb, var(--card-butter-border) 75%, var(--rule));
+  border-bottom: 1px solid color-mix(in srgb, var(--card-butter-border) 75%, var(--rule));
+  padding: 6px 20px;
+  animation: none;
+}
+
+.thank-you-page .thank-you-page__valuation > span {
+  display: block;
+  color: var(--ink-muted);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+.thank-you-page .thank-you-page__valuation > strong {
+  display: block;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(2.25rem, 5vw, 3.125rem);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  line-height: 1.05;
+}
+
+.thank-you-page .thank-you-page__valuation-note {
+  margin: 0 0 9px;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.thank-you-page .thank-you-page__reveal {
+  margin: 0 0 8px;
+  animation: none;
+}
+
+.thank-you-page .thank-you-page__reveal > p {
+  margin: 0 0 2px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.thank-you-page .thank-you-page__reveal > h2 {
+  margin: 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.thank-you-page .thank-you-page__heartfelt {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.thank-you-page .thank-you-page__heartfelt p {
+  margin: 0;
+}
+
+.thank-you-page .thank-you-page__filed {
+  margin: 8px 0 0;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+.thank-you-page .thank-you-page__controls {
+  min-height: 50px;
+  flex: 0 0 auto;
+  padding-top: 8px;
+}
+
+.thank-you-page .thank-you-page__reopen {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 700ms ease, visibility 0s linear 700ms;
+}
+
+.thank-you-page .thank-you-page__reopen.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+@media (max-height: 620px) {
+  .thank-you-page {
+    padding-top: 4px;
+    padding-bottom: 2px;
+  }
+
+  .thank-you-page .thank-you-page__message {
+    padding: 8px clamp(14px, 4vw, 32px);
+  }
+
+  .thank-you-page .thank-you-page__eyebrow {
+    font-size: 0.6rem;
+    line-height: 1.15;
+  }
+
+  .thank-you-page .thank-you-page__message > h1.thank-you-page__line {
+    margin-bottom: 5px;
+    font-size: clamp(1.5rem, 4vh, 2rem);
+    line-height: 1.05;
+  }
+
+  .thank-you-page .thank-you-page__valuation {
+    margin-bottom: 5px;
+    padding-block: 3px;
+  }
+
+  .thank-you-page .thank-you-page__valuation > span {
+    font-size: 0.5625rem;
+    line-height: 1.1;
+  }
+
+  .thank-you-page .thank-you-page__valuation > strong {
+    font-size: clamp(1.875rem, 5vh, 2.5rem);
+    line-height: 1;
+  }
+
+  .thank-you-page .thank-you-page__valuation-note {
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .thank-you-page .thank-you-page__reveal {
+    margin-bottom: 5px;
+  }
+
+  .thank-you-page .thank-you-page__reveal > p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .thank-you-page .thank-you-page__reveal > h2 {
+    font-size: clamp(1.25rem, 3vh, 1.6rem);
+    line-height: 1.1;
+  }
+
+  .thank-you-page .thank-you-page__heartfelt {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .thank-you-page .thank-you-page__filed {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    line-height: 1.15;
+  }
+
+  .thank-you-page .thank-you-page__controls {
+    min-height: 44px;
+    padding-top: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thank-you-page__reveal-item,
+  .thank-you-page .thank-you-page__reopen {
+    filter: none;
+    transition-duration: 120ms;
+    transform: none;
+  }
+}
+
+.thank-you-page {
+  display: flex;
+  min-height: 0;
+  height: 100%;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: stretch;
+  overflow: hidden;
+  overscroll-behavior: none;
+  padding: 0 24px 4px;
+  background: transparent;
+}
+
+.screen-page.thank-you-page {
+  min-height: 0;
+  height: 100%;
+  flex: 1 1 0%;
+}
+
+.thank-you-page .thank-you-finale {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  place-items: center;
+  overflow: hidden;
+}
+
+.thank-you-page .thank-you-finale__scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  visibility: hidden;
+  opacity: 0;
+  filter: blur(3px);
+  transition: opacity 950ms ease, filter 1100ms ease, visibility 0s linear 1100ms;
+  pointer-events: none;
+}
+
+.thank-you-page .thank-you-finale__scene--active {
+  visibility: visible;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 0s;
+}
+
+.thank-you-page .thank-you-finale__opening {
+  flex-direction: column;
+  gap: 5px;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  letter-spacing: 0.18em;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__opening p {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.thank-you-page .thank-you-finale__opening span {
+  font-size: 0.625rem;
+}
+
+.thank-you-page .thank-you-finale__missing {
+  gap: 0.18em 0.3em;
+  padding-inline: 4vw;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(1.4rem, 5.2vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.12;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__kinetic-word {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(calc((var(--word-index) - 2) * 7px)) translateY(8px);
+  animation: finale-word-arrive 850ms ease-out forwards;
+  animation-delay: calc(var(--word-index) * 150ms);
+  animation-play-state: paused;
+}
+
+.thank-you-page .thank-you-finale__missing.thank-you-finale__scene--active .thank-you-finale__kinetic-word,
+.thank-you-page .thank-you-finale__truth-line.is-visible span {
+  animation-play-state: running;
+}
+
+.thank-you-page .thank-you-finale__valuation {
+  flex-direction: column;
+  padding-inline: 18px;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__valuation-label {
+  margin: 0 0 5px;
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.thank-you-page .thank-you-finale__valuation-label.is-visible,
+.thank-you-page .thank-you-finale__priceless.is-visible,
+.thank-you-page .thank-you-finale__valuation-note.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.thank-you-page .thank-you-finale__priceless {
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(3rem, 13vw, 10rem);
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  line-height: 0.98;
+  opacity: 0;
+  transform: translateY(12px) scale(0.94);
+  transition: opacity 1100ms ease, transform 1300ms cubic-bezier(0.2, 0.7, 0.25, 1);
+}
+
+.thank-you-page .thank-you-finale__rule {
+  width: min(68vw, 580px);
+  height: 1px;
+  margin-top: 16px;
+  background: color-mix(in srgb, var(--treasury) 48%, var(--rule));
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: opacity 700ms ease, transform 1300ms ease;
+}
+
+.thank-you-page .thank-you-finale__rule.is-visible {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.thank-you-page .thank-you-finale__valuation-note {
+  margin: 13px 0 0;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 850ms ease, transform 850ms ease;
+}
+
+.thank-you-page .thank-you-finale__memory-words {
+  position: absolute;
+  inset: 0;
+  transition: opacity 1200ms ease, transform 1500ms ease;
+}
+
+.thank-you-page .thank-you-finale__memory-word {
+  position: absolute;
+  display: block;
+  color: color-mix(in srgb, var(--treasury) 72%, var(--ink-muted));
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: clamp(0.7rem, 1.8vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  opacity: 0;
+  animation: finale-float-in 800ms ease-out forwards;
+  animation-delay: calc(var(--float-index) * 130ms);
+  animation-play-state: paused;
+}
+
+.thank-you-page .thank-you-finale__memories.thank-you-finale__scene--active .thank-you-finale__memory-word {
+  animation-play-state: running;
+}
+
+.thank-you-page .thank-you-finale__truth {
+  flex-direction: column;
+  padding-inline: 6vw;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__truth-intro {
+  margin: 0 0 16px;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(1rem, 2.6vw, 1.55rem);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 1100ms ease, transform 1100ms ease;
+}
+
+.thank-you-page .thank-you-finale__truth-intro.is-visible,
+.thank-you-page .thank-you-finale__truth-line.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.thank-you-page .thank-you-finale__truth-line {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.02em 0.22em;
+  margin: 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(2.25rem, 9vw, 7.5rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.04;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1100ms ease, transform 1100ms ease;
+}
+
+.thank-you-page .thank-you-finale__truth-line span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.thank-you-page .thank-you-finale__truth-line.is-visible span {
+  animation: finale-word-arrive 1100ms ease-out forwards;
+  animation-delay: calc(var(--word-index) * 270ms);
+}
+
+.thank-you-page .thank-you-finale__personal {
+  flex-direction: column;
+  gap: clamp(18px, 4vh, 42px);
+  padding-inline: 9vw;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__personal-line {
+  max-width: 820px;
+  margin: 0;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(1.35rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.25;
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateY(12px);
+  transition: opacity 1000ms ease, filter 1000ms ease, transform 1000ms ease;
+}
+
+.thank-you-page .thank-you-finale__personal-line--two {
+  color: var(--ink);
+}
+
+.thank-you-page .thank-you-finale__personal-line--three {
+  color: color-mix(in srgb, var(--treasury) 78%, var(--card-pink));
+  font-style: italic;
+}
+
+.thank-you-page .thank-you-finale__personal-line.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.thank-you-page .thank-you-finale__memory-word {
+  color: var(--ink-muted);
+  font-size: clamp(0.7rem, 1.6vw, 1rem);
+  letter-spacing: 0.13em;
+  animation-duration: 1300ms;
+}
+
+.thank-you-page .thank-you-finale__memory-word--1 { left: 9%; top: 16%; --float-index: 0; }
+.thank-you-page .thank-you-finale__memory-word--2 { left: 47%; top: 12%; --float-index: 1; }
+.thank-you-page .thank-you-finale__memory-word--3 { right: 9%; top: 22%; --float-index: 2; }
+.thank-you-page .thank-you-finale__memory-word--4 { left: 22%; top: 35%; --float-index: 3; }
+.thank-you-page .thank-you-finale__memory-word--5 { right: 17%; top: 39%; --float-index: 4; }
+.thank-you-page .thank-you-finale__memory-word--6 { left: 7%; top: 60%; --float-index: 5; }
+.thank-you-page .thank-you-finale__memory-word--7 { left: 38%; top: 71%; --float-index: 6; }
+.thank-you-page .thank-you-finale__memory-word--8 { right: 8%; top: 69%; --float-index: 7; }
+.thank-you-page .thank-you-finale__memory-word--9 { left: 24%; top: 82%; --float-index: 8; }
+.thank-you-page .thank-you-finale__memory-word--10 { right: 28%; top: 16%; --float-index: 9; }
+.thank-you-page .thank-you-finale__memory-word--11 { left: 57%; top: 47%; --float-index: 10; }
+.thank-you-page .thank-you-finale__memory-word--12 { left: 13%; top: 43%; --float-index: 11; }
+.thank-you-page .thank-you-finale__memory-word--13 { right: 12%; top: 52%; --float-index: 12; }
+.thank-you-page .thank-you-finale__memory-word--14 { left: 69%; top: 82%; --float-index: 13; }
+.thank-you-page .thank-you-finale__memory-word--15 { left: 47%; top: 27%; --float-index: 14; }
+
+.thank-you-page .thank-you-finale__memory-words--dissolving {
+  opacity: 0;
+  transform: scale(1.04);
+}
+
+.thank-you-page .thank-you-finale__mom {
+  position: relative;
+  z-index: 1;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(5rem, 22vw, 17rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1400ms ease, transform 1800ms cubic-bezier(0.2, 0.7, 0.25, 1);
+}
+
+.thank-you-page .thank-you-finale__mom.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.thank-you-page .thank-you-finale__ending {
+  flex-direction: column;
+  gap: clamp(10px, 2vh, 20px);
+  padding: 8px 6vw;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__thanks {
+  color: var(--treasury);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.thank-you-page .thank-you-finale__for,
+.thank-you-page .thank-you-finale__birthday {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(1rem, 2.7vw, 1.65rem);
+  line-height: 1.45;
+}
+
+.thank-you-page .thank-you-finale__birthday {
+  color: var(--treasury);
+  font-style: italic;
+}
+
+.thank-you-page .thank-you-finale__filed {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 7px;
+  color: var(--ink-muted);
+  font-size: 0.6875rem;
+  letter-spacing: 0.07em;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending {
+  flex-direction: column;
+  gap: 14px;
+  padding: 8vw;
+  color: var(--treasury);
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending > p {
+  margin: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending > strong {
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-weight: 500;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending > span {
+  color: var(--ink);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  line-height: 1.4;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--ink-muted);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+}
+
+.thank-you-page .thank-you-page__controls {
+  min-height: 50px;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  padding-top: 6px;
+}
+
+.thank-you-page .thank-you-page__controls .replay-link {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 850ms ease, visibility 0s linear 850ms;
+}
+
+.thank-you-page .thank-you-page__controls--visible .replay-link {
+  transition-delay: 0s;
+}
+
+@keyframes finale-word-arrive {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes finale-float-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 0.68; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .thank-you-page {
+    padding-inline: 14px;
+  }
+
+  .thank-you-page .thank-you-finale__missing {
+    font-size: clamp(1.3rem, 7vw, 2.35rem);
+  }
+
+  .thank-you-page .thank-you-finale__memory-word {
+    font-size: clamp(0.55rem, 2.4vw, 0.8rem);
+    letter-spacing: 0.07em;
+  }
+
+  .thank-you-page .thank-you-finale__truth-line {
+    font-size: clamp(2rem, 11vw, 4rem);
+  }
+
+  .thank-you-page .thank-you-finale__personal {
+    gap: clamp(18px, 5vh, 32px);
+    padding-inline: 5vw;
+  }
+
+  .thank-you-page .thank-you-finale__personal-line {
+    font-size: clamp(1.35rem, 6vw, 2rem);
+  }
+
+  .thank-you-page .thank-you-finale__mom {
+    font-size: clamp(5rem, 29vw, 9rem);
+  }
+}
+
+@media (max-height: 600px) {
+  .thank-you-page {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .thank-you-page .thank-you-page__controls {
+    min-height: 42px;
+    padding-top: 2px;
+  }
+
+  .thank-you-page .thank-you-finale__personal {
+    gap: 12px;
+  }
+
+  .thank-you-page .thank-you-finale__ending {
+    gap: 8px;
+  }
+
+  .thank-you-page .thank-you-finale__thanks {
+    font-size: clamp(2rem, 8vh, 4.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thank-you-page .thank-you-finale__scene,
+  .thank-you-page .thank-you-finale__valuation-label,
+  .thank-you-page .thank-you-finale__priceless,
+  .thank-you-page .thank-you-finale__rule,
+  .thank-you-page .thank-you-finale__valuation-note,
+  .thank-you-page .thank-you-finale__truth-intro,
+  .thank-you-page .thank-you-finale__truth-line,
+  .thank-you-page .thank-you-finale__personal-line,
+  .thank-you-page .thank-you-finale__mom,
+  .thank-you-page .thank-you-page__controls .replay-link {
+    transition-duration: 120ms;
+  }
+
+  .thank-you-page .thank-you-finale__kinetic-word,
+  .thank-you-page .thank-you-finale__memory-word,
+  .thank-you-page .thank-you-finale__truth-line.is-visible span {
+    animation: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}

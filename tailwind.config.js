@@ -1,0 +1,43 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        paper: "var(--paper)",
+        surface: "var(--surface)",
+        ink: "var(--ink)",
+        "ink-muted": "var(--ink-muted)",
+        rule: "var(--rule)",
+        treasury: "var(--treasury)",
+        "deep-teal": "#1D7A75",
+        "pastel-blue": "#C3E3FD",
+        "warm-yellow": "#FDE381",
+        mint: "#BCEAD5",
+        "blush-pink": "#FBC0C7",
+        "audit-red": "var(--audit-red)",
+        blush: "var(--blush)",
+        peach: "var(--peach)",
+        butter: "var(--butter)",
+        sage: "var(--sage)",
+        lavender: "var(--lavender)",
+        cocoa: "var(--cocoa)",
+        strawberry: "var(--strawberry)",
+        amber: "var(--amber)",
+        saffron: "var(--saffron)",
+        coral: "var(--coral)",
+        indigo: "var(--indigo)",
+        olive: "var(--olive)",
+        plum: "var(--plum)",
+        marigold: "var(--marigold)",
+      },
+      fontFamily: {
+        display: ["Newsreader Variable", "Newsreader", "Georgia", "serif"],
+        sans: ["IBM Plex Sans", "Arial", "sans-serif"],
+        mono: ["IBM Plex Mono", "monospace"],
+        hand: ["Caveat", "Segoe Print", "cursive"],
+      },
+    },
+  },
+  plugins: [],
+};
