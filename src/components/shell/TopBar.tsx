@@ -22,10 +22,14 @@ export function TopBar() {
     if (theme === "light") notify(`${config.momNickname} has entered night mode.`);
   };
   const navigate = useNavigate();
+  const handleBrandClick = () => {
+    recordLogoClick();
+    navigate("/01");
+  };
 
   return (
     <header className="topbar">
-      <button className="topbar__brand" type="button" onClick={() => navigate("/01")} aria-label={`${config.momNickname} & Co. logo`}>
+      <button className="topbar__brand" type="button" onClick={handleBrandClick} aria-label={`${config.momNickname} & Co. logo`}>
         <span className="topbar__monogram" aria-hidden="true">♥</span>
         <span>{config.momNickname} &amp; Co.</span>
       </button>

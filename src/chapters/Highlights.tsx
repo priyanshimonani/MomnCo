@@ -1,7 +1,7 @@
-import { CheckCheck, CircleHelp, Gauge as GaugeIcon, Moon, Utensils } from "lucide-react";
+import { CheckCheck, CircleHelp, Gauge as GaugeIcon, Utensils } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { Button, Gauge } from "../components/ui/primitives";
+import { Button } from "../components/ui/primitives";
 import { highlights } from "../data/highlights";
 
 const icons = {

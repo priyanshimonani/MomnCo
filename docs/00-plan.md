@@ -11,7 +11,7 @@ Personalization lives in `src/data/config.ts`: `momNickname` defaults to `Mom`; 
 3. **Financial Statements** — preserve Balance Sheet / P&L / Cash Flow tabs, Net Worth glitch, hugs toggle, and waterfall.
 4. **Audit** — preserve the sequential checklist and rest failure; click or tap to position and apply the approval stamp.
 5. **Board Resolution / Dividend** — present Mom's dividend certificate, collect a drawn signature, submit for approval, and reveal the credited dividend.
-6. **Thank You** — stage a full-screen cinematic reveal from final statement through “PRICELESS” to the personal birthday message and Replay, without an accounting-terms interlude.
+6. **Thank You** — stage a full-screen cinematic reveal from final statement and “PRICELESS” through the dissolving accounting terms, personal birthday message, and final Replay.
 
 ## Navigation and Easter eggs
 Use sequential Continue navigation and six progress dots. The top bar contains the logo, theme toggle, and profile menu. Preserve Logout (“Nice try.”), Delete account (“Requires approval from Mom.”), the dark-mode toast, 404 (“Third drawer.”), and logo ×7 reset.

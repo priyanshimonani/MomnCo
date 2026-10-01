@@ -2358,6 +2358,98 @@
   transition: opacity 850ms ease, transform 850ms ease;
 }
 
+.thank-you-page .thank-you-finale__accounts {
+  flex-direction: column;
+  padding-inline: 6vw;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-finale__account-words {
+  position: absolute;
+  inset: 0;
+  transition: opacity 1100ms ease, transform 1500ms ease;
+}
+
+.thank-you-page .thank-you-finale__account-word {
+  position: absolute;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: clamp(0.62rem, 1.6vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  opacity: 0;
+  animation: finale-float-in 800ms ease-out forwards;
+  animation-delay: calc(var(--float-index) * 110ms);
+  animation-play-state: paused;
+}
+
+.thank-you-page .thank-you-finale__accounts.thank-you-finale__scene--active .thank-you-finale__account-word {
+  animation-play-state: running;
+}
+
+.thank-you-page .thank-you-finale__account-word--1 { left: 12%; top: 20%; --float-index: 0; --drift-x: -18px; --drift-y: -8px; }
+.thank-you-page .thank-you-finale__account-word--2 { right: 9%; top: 17%; --float-index: 1; --drift-x: 18px; --drift-y: -12px; }
+.thank-you-page .thank-you-finale__account-word--3 { left: 36%; top: 11%; --float-index: 2; --drift-x: -8px; --drift-y: -16px; }
+.thank-you-page .thank-you-finale__account-word--4 { left: 7%; top: 47%; --float-index: 3; --drift-x: -24px; --drift-y: 0; }
+.thank-you-page .thank-you-finale__account-word--5 { right: 8%; top: 42%; --float-index: 4; --drift-x: 22px; --drift-y: -4px; }
+.thank-you-page .thank-you-finale__account-word--6 { left: 17%; bottom: 19%; --float-index: 5; --drift-x: -14px; --drift-y: 12px; }
+.thank-you-page .thank-you-finale__account-word--7 { right: 21%; bottom: 15%; --float-index: 6; --drift-x: 18px; --drift-y: 15px; }
+.thank-you-page .thank-you-finale__account-word--8 { left: 44%; top: 26%; --float-index: 7; --drift-x: 0; --drift-y: -14px; }
+.thank-you-page .thank-you-finale__account-word--9 { right: 35%; bottom: 28%; --float-index: 8; --drift-x: 0; --drift-y: 18px; }
+
+.thank-you-page .thank-you-finale__account-words--dissolving {
+  opacity: 0;
+  transform: scale(1.04);
+}
+
+.thank-you-page .thank-you-finale__account-words--dissolving .thank-you-finale__account-word {
+  animation-play-state: paused;
+  transition: opacity 900ms ease, transform 1200ms ease;
+}
+
+.thank-you-page .thank-you-finale__account-words--dissolving .thank-you-finale__account-word:nth-child(2n) {
+  transform: translate(var(--drift-x), var(--drift-y));
+}
+
+.thank-you-page .thank-you-finale__account-words--dissolving .thank-you-finale__account-word:nth-child(2n + 1) {
+  transform: translate(calc(-1 * var(--drift-x)), calc(-1 * var(--drift-y)));
+}
+
+.thank-you-page .thank-you-finale__value {
+  z-index: 1;
+  color: var(--treasury);
+  font-family: "Newsreader Variable", "Newsreader", Georgia, serif;
+  font-size: clamp(4rem, 15vw, 11rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  opacity: 0;
+  transform: translateY(12px) scale(0.94);
+  transition: opacity 1100ms ease, transform 1300ms cubic-bezier(0.2, 0.7, 0.25, 1);
+}
+
+.thank-you-page .thank-you-finale__value.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.thank-you-page .thank-you-finale__impossible {
+  z-index: 1;
+  margin: 9px 0 0;
+  color: var(--ink-muted);
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 900ms ease, transform 900ms ease;
+}
+
+.thank-you-page .thank-you-finale__impossible.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .thank-you-page .thank-you-finale__memory-words {
   position: absolute;
   inset: 0;
@@ -2524,6 +2616,7 @@
 }
 
 .thank-you-page .thank-you-finale__thanks {
+  margin: 0;
   color: var(--treasury);
   font-family: "Newsreader Variable", Georgia, serif;
   font-size: clamp(2.5rem, 8vw, 7rem);
@@ -2557,30 +2650,45 @@
 
 .thank-you-page .thank-you-finale__reduced-ending {
   flex-direction: column;
-  gap: 14px;
-  padding: 8vw;
+  gap: clamp(3px, 0.8vh, 9px);
+  padding: min(3vh, 16px) 5vw;
   color: var(--treasury);
   text-align: center;
 }
 
 .thank-you-page .thank-you-finale__reduced-ending > p {
   margin: 0;
-  font-size: 0.6875rem;
+  font-size: clamp(0.56rem, 1.4vw, 0.68rem);
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.11em;
 }
 
-.thank-you-page .thank-you-finale__reduced-ending > strong {
+.thank-you-page .thank-you-finale__reduced-ending > h1 {
+  margin: 0;
   font-family: "Newsreader Variable", Georgia, serif;
-  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-size: clamp(2rem, 7vw, 4.5rem);
   font-weight: 500;
+  line-height: 1;
 }
 
 .thank-you-page .thank-you-finale__reduced-ending > span {
   color: var(--ink);
   font-family: "Newsreader Variable", Georgia, serif;
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  line-height: 1.4;
+  font-size: clamp(0.78rem, 2vw, 1rem);
+  line-height: 1.22;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending > .thank-you-finale__reduced-price {
+  color: var(--treasury);
+  font-size: clamp(2.4rem, 9vw, 5rem);
+  letter-spacing: 0.06em;
+  line-height: 0.95;
+}
+
+.thank-you-page .thank-you-finale__reduced-ending > .thank-you-finale__reduced-truth {
+  color: var(--treasury);
+  font-size: clamp(1.35rem, 4.2vw, 2.4rem);
+  line-height: 1.05;
 }
 
 .thank-you-page .thank-you-finale__reduced-ending footer {
@@ -2600,13 +2708,7 @@
 }
 
 .thank-you-page .thank-you-page__controls .replay-link {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 850ms ease, visibility 0s linear 850ms;
-}
-
-.thank-you-page .thank-you-page__controls--visible .replay-link {
-  transition-delay: 0s;
+  transition: transform 160ms ease;
 }
 
 @keyframes finale-word-arrive {
@@ -2639,6 +2741,16 @@
   .thank-you-page .thank-you-finale__truth-line {
     font-size: clamp(2rem, 11vw, 4rem);
   }
+
+  .thank-you-page .thank-you-finale__account-word {
+    font-size: clamp(0.5rem, 2.1vw, 0.7rem);
+    letter-spacing: 0.06em;
+  }
+
+  .thank-you-page .thank-you-finale__account-word--1 { left: 4%; }
+  .thank-you-page .thank-you-finale__account-word--2 { right: 4%; }
+  .thank-you-page .thank-you-finale__account-word--4 { left: 3%; }
+  .thank-you-page .thank-you-finale__account-word--5 { right: 3%; }
 
   .thank-you-page .thank-you-finale__personal {
     gap: clamp(18px, 5vh, 32px);

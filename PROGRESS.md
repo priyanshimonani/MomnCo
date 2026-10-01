@@ -136,7 +136,7 @@ No dependencies were added.
 - [x] Smoke-check the running app at the audit hash route (HTTP 200).
 - [ ] Run the audit interaction through mouse, touch, keyboard, and reduced-motion states.
 - [x] Vite production bundling passes; the audit component has no diagnostics.
-- [ ] `npm run build` remains blocked by unused imports in Highlights.tsx and TopBar.tsx.
+- [x] Cleared the unused-import TypeScript errors; production build passes.
 
 ## Dividend certificate and signature
 
@@ -144,7 +144,7 @@ No dependencies were added.
 - [x] Verify drawing, clearing, submit delay, approval stamp, keyboard activation, and Continue gating in-browser.
 - [x] Verify mobile width without horizontal overflow and reduced-motion approval.
 - [x] `npx vite build` passes; edited component and styles have no diagnostics.
-- [ ] `npm run build` remains blocked by pre-existing unused imports in Highlights.tsx and TopBar.tsx.
+- [x] Cleared the unused-import TypeScript errors; production build passes.
 - [x] Automatically approve after the signature is completed and keep the signature visible.
 - [x] Make only the dividend screen vertically scrollable so its content and Continue remain accessible.
 
@@ -153,5 +153,16 @@ No dependencies were added.
 - [x] Replace the closing card with a full-screen, staged report-to-birthday motion sequence.
 - [x] Remove signature/form interactions and reveal Replay only after the closing footer.
 - [x] Keep the finale viewport-contained and provide a short reduced-motion path.
-- [x] Remove the accounting-terms interlude and keep the remaining reveal sequence intact.
-- [ ] Verify the sequence and no-scroll behavior; run the production build.
+- [x] Include the requested accounting-terms interlude in the reveal sequence.
+- [x] Verify the timed reveal, delayed Replay, reduced-motion path, and no-scroll final view.
+- [x] `npm run build` passes; all six routes load in production preview.
+
+## Deployment-readiness audit
+
+- [x] Remove unused imports blocking TypeScript and reconnect the logo seven-click reset.
+- [x] Add a self-contained SVG favicon; preserve existing title and description metadata.
+- [x] Scan app sources for local development references and exposed-secret patterns.
+- [x] Verify all six production routes and core navigation at desktop and mobile widths.
+- [x] Verify theme/profile interactions, 404 recovery, final Replay, and reduced-motion behavior.
+- [x] Use a semantic final h1 and confirm no browser errors, failed requests, horizontal overflow, or final-screen scrolling.
+- [x] `npm run build` passes without warnings; deploy the generated `dist/` directory.
